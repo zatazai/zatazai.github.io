@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/.bricks_bg.jpg.icloud)
+  background:url(images/bricks_bg.jpg)
       center center fixed no-repeat;
     background-size: cover;
 	
@@ -113,7 +113,7 @@ nav{
     font-size: 1.2em;
     width: 400px;
     margin: 0 auto;
-    border: dashed turqoise;
+    border: dashed turquoise;
     border-width: 3px 0;
     text-align: center;
     margin-top: 2em;

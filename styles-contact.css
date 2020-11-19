@@ -60,64 +60,39 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background:url(images/bricks_bg.jpg)
+  background:url(images/background_labwork.jpg)
       center center fixed no-repeat;
     background-size: cover;
+    font-family: "helvetica", sans-serif; 
 	
 }
 
 .center {
-    width: 800px;
+    width: 80%;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(256, 256, 256, .60); /*this uses opacity of 75% for the background color*/
 	text-align: center;
 	border: 4px dashed white;
 }
 
    
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin-bottom: 50px;
+    margin-bottom: 40px;
 	text-align: center;
 }
 
-h1 {
-	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */
-	font-size: 2em;
-    margin: 0px auto 10px auto;
-    color: #fff;
-}
-
-h2 {
-	font-family: monarcha, serif;
-    font-weight: 400;
-    font-style: normal;
-	font-size: 1.5em;
-    line-height: 1.4;
-    color: #fff;
-    padding: 0px 0px;
-    margin: 0px auto 25px auto;
-}
 
 p {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */		;
 	font-size: 1.2em;
+    font-family: cursive;
     line-height: 1.6;
-    color: #fff;
+    color: #4D1205;
 }
     
     
-nav{
-    font-family: garamond;
-    font-size: 1.2em;
-    width: 400px;
-    margin: 0 auto;
-    border: dashed turquoise;
-    border-width: 3px 0;
-    text-align: center;
-    margin-top: 2em;
-}
 
 nav li{
     display:inline;

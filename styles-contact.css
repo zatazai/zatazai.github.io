@@ -73,7 +73,7 @@ html, body {
     margin: 100px auto;
  	background: rgba(256, 256, 256, .60); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	border: 4px white;
 }
 
    
@@ -86,10 +86,10 @@ html, body {
 
 p {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */		;
-	font-size: 1.2em;
+	font-size: 2 em;
     font-family: cursive;
     line-height: 1.6;
-    color: #4D1205;
+    color: deeppink;
 }
     
     
@@ -104,7 +104,7 @@ nav li{
     }
 
 a{
-    color:#444;
+    color:gray;
     text-decoration:none;
     font-weight: bold;
     }

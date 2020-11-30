@@ -86,10 +86,12 @@ html, body {
 
 p {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM ADOBE FONTS OR GOOGLE FONTS */		;
-	font-size: 7 em;
+    font-size: 50;
+    line-height: 2;
+    letter-spacing: 2px;
     font-family: cursive;
-    line-height: 1.6;
-    color: deeppink;
+    line-height: 2.5;
+    color: gray;
 }
     
     

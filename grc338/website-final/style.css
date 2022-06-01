@@ -1,0 +1,146 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+div.container {
+    max-width: 65rem;
+    margin: auto;
+    }
+
+img {
+    width: 100%;
+    display: block;
+
+}
+
+body {
+    background-color: #fafafa;
+}
+
+header {
+    background-color:rgb(246, 214, 243) ;
+}
+
+nav ul {
+    text-align: left;
+    padding: 1rem 1rem 1rem;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    text-align: left;
+    margin-right: 1rem;
+    font-family: cocktail-shaker, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+}
+
+nav ul li a {
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(232, 110, 179);
+}
+
+h1 {
+    width: 20em;
+    padding: 1rem;
+}
+
+h2 {
+    margin: 3rem 1rem 1rem;
+    color: rgb(35, 35, 35);
+    text-align: left;
+    font-family: cocktail-shaker, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.5rem
+
+}
+
+h3 {
+    margin: 2rem 2rem 2rem;
+    color: rgb(32, 22, 72);
+    font-size: 2.4rem;
+    font-family: cocktail-shaker, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0 rem;
+
+
+}
+
+h4 {
+    border-top: solid .7rem rgb(238, 193, 229);
+    margin: 1rem 1rem 1rem;
+    color: rgb(35, 35, 35);
+    font-size: 2rem;
+    font-family: degular, sans-serif;
+       font-weight: 400;
+       font-style: bold;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+}
+h5 {
+    margin: 2rem 2rem 2rem;
+    color: rgb(35, 35, 35);
+    font-size: 3 rem;
+    font-family: degular, sans-serif;
+       font-weight: 400;
+       font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    line-height: 1em
+
+}
+
+p {
+    color: #1e1e1e;
+    max-width: 37rem;
+    margin: 2rem 2rem 2rem;
+    font-size: 1rem;
+    font-family: degular, sans-serif;
+       font-weight: 400;
+       font-style: normal;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    line-height: 1.8em
+
+
+}
+
+p.price {
+    font-weight: 600;
+    line-height: 1.1em
+}
+
+p.center {
+    text-align: left;
+}
+
+@media only screen and (min-width: 65rem) {
+  
+
+
+  main{
+    display:grid;
+    padding: 2em 1em 2em;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+  }
+
+  
+}
+
+
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */

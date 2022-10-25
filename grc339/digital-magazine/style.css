@@ -1,0 +1,93 @@
+/*CSS document*/
+
+body {
+    background-color: #fafafa;
+    margin: 3em;
+
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+aside{
+    margin-top: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul li a{
+    font-family: dapifer,serif;
+    font-weight: 550;
+    font-style: normal;
+    color: #f3b378;
+    font-style: normal;
+    font-size: 0.97em;
+    margin-right: 1em;
+    text-transform: lowercase;
+    text-decoration:  none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    display: inline;
+}
+
+nav ul li a:hover{
+    color: #696a6d;
+}
+
+
+h1{
+    width: 5em;
+}
+
+h2{
+    font-family: dapifer,serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #f19f71;
+}
+
+
+
+h3{
+    font-family: dapifer,serif;
+    font-weight: 550;
+    font-style: normal;
+    color: #f3b378;
+}
+
+h4{
+    font-family: dapifer,serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #f3b378;
+}
+
+h1:hover{
+    color: #696a6d;
+}
+
+p{
+    font-family: davis-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #696a6d;
+}
+

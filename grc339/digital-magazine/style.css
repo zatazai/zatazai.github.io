@@ -1,14 +1,24 @@
 /*CSS document*/
 
 body {
-    background-color: #fafafa;
+    background-color: #fef7ef;
     margin: 3em;
 
 }
 
 div.container {
-    max-width: 40em;
-    margin: auto;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+div.container-story {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+
+section{
+    margin-right: 3em;
 }
 
 figure {
@@ -19,12 +29,17 @@ img {
     width: 100%;
 }
 
-aside{
-    margin-top: 2em;
+body{
+    font-size: 1em;
 }
 
 a{
     text-decoration: none;
+}
+
+nav{
+    margin-bottom: 2em;
+    font-size: 12pt;
 }
 
 nav ul li a{
@@ -44,9 +59,6 @@ ul {
     padding: 0;
 }
 
-ul li{
-    display: inline;
-}
 
 nav ul li a:hover{
     color: #696a6d;
@@ -65,12 +77,12 @@ h2{
 }
 
 
-
 h3{
     font-family: dapifer,serif;
     font-weight: 550;
     font-style: normal;
     color: #f3b378;
+    margin-top: 0.5em;
 }
 
 h4{
@@ -89,5 +101,94 @@ p{
     font-weight: 400;
     font-style: normal;
     color: #696a6d;
+}
+
+p.section{
+    font-family: davis-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #696a6d;
+    margin-right: 8em;
+}
+
+footer{
+    margin-top: 3em;
+}
+
+@media screen  and (min-width: 30em) {
+    div.container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    div.container-story {
+        max-width: 50em;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;
+    }
+
+    h1{
+        width: 6em;
+        margin: 0em;
+    }
+
+    p{
+        margin-bottom: 1em;
+    }
+    ul li{
+        display: inline;
+    } 
+    nav{
+        margin-bottom: 2em;
+        font-size: 16pt;
+    }
+    
+    nav ul li a{
+        font-family: dapifer,serif;
+        font-weight: 550;
+        font-style: normal;
+        color: #f3b378;
+        font-style: normal;
+        font-size: 0.97em;
+        margin-right: 1em;
+        text-transform: lowercase;
+        text-decoration:  none;
+    }
+
+
+    nav ul li a:hover{
+    color: #696a6d;
+    }
+
+    header{
+        grid-column: 1/3;
+    }
+
+    body{
+        font-size: 1.2em;
+    }
+    
+    main{
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1em 2em;
+       
+
+    }
+    section.mainstory {
+        grid-column:1/3;
+        grid-row:1/3;
+    }
+
+    section{
+        margin-right: 3em;
+    }
+
+    aside{
+        grid-column: 2/3;
+        margin-left: 3em;
+    }
 }
 

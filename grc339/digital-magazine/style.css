@@ -1,24 +1,39 @@
 /*CSS document*/
 
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+/*MOBILE UNIVERSAL*/
+
 body {
     background-color: #fef7ef;
-    margin: 3em;
-
 }
 
 div.container {
-    max-width: 70em;
+    max-width: 60em;
     margin: 0 auto;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 div.container-story {
-    max-width: 50em;
+    max-width: 60em;
     margin: 0 auto;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
+div.mainstory p {
+    margin: 0 0 1em;
+}
+
+nav{
+    margin-bottom: 2em;
+    font-size: 1em;
+
+}
 
 section{
-    margin-right: 3em;
+    margin: 0;
 }
 
 figure {
@@ -35,11 +50,6 @@ body{
 
 a{
     text-decoration: none;
-}
-
-nav{
-    margin-bottom: 2em;
-    font-size: 12pt;
 }
 
 nav ul li a{
@@ -59,14 +69,12 @@ ul {
     padding: 0;
 }
 
-
 nav ul li a:hover{
     color: #696a6d;
 }
 
-
 h1{
-    width: 5em;
+    width: 4em;
 }
 
 h2{
@@ -74,15 +82,15 @@ h2{
     font-weight: 600;
     font-style: normal;
     color: #f19f71;
+    margin-bottom: 0.5em;
 }
-
 
 h3{
     font-family: dapifer,serif;
     font-weight: 550;
     font-style: normal;
     color: #f3b378;
-    margin-top: 0.5em;
+
 }
 
 h4{
@@ -101,6 +109,7 @@ p{
     font-weight: 400;
     font-style: normal;
     color: #696a6d;
+    margin-bottom: 1em;
 }
 
 p.section{
@@ -111,39 +120,191 @@ p.section{
     margin-right: 8em;
 }
 
-footer{
-    margin-top: 3em;
+aside{
+    grid-column: 2/3;
+    margin-right: 2em;
+    
+
 }
 
-@media screen  and (min-width: 30em) {
+footer{
+    margin-top: 3em;
+    margin-left: 1em;
+    grid-column: 1/3;
+}
+
+/*MOBILE PHOTO GALLERY*/
+
+div.gallery {
+    max-width: 70em;
+    margin-top: 3em;
+    grid-column: 1/3;
+}
+
+/*creates the actual gallery*/
+figure.gallery{
+    width: calc(100% + 1em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+main.gallery {
+    position: relative;
+    padding-bottom: calc(67% + 2.5em);
+    overflow: hidden;
+    margin-bottom: 1em;
+
+}
+
+nav.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .4em;
+    row-gap: .1em;
+   
+}
+
+figcaption {
+    font-family: davis-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #696a6d;
+    margin-top: 0.1em;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    left: 0;
+    opacity: 1;
+}
+
+label{
+    flex: 1 0 8em;
+}
+
+input{
+    display: none;
+}
+
+/*NEWSLETTER MOBILE*/
+
+    .formStyle {
+        display: block;
+        padding: 1.25em; 
+        width: 29em; 
+        margin-bottom: 1.25em; 
+        border-top-style: none; 
+        border-right-style: none; 
+        border-left-style: none;
+        font-family: davis-sans, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #696a6d;
+       
+    }
+
+    .formButton {
+        background-color:#f3b378;
+        display:inline-block;
+        font-family: davis-sans, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #fef7ef;
+        padding: 1em 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-decoration:none;
+    }
+    
+    input::placeholder {
+        font-family: davis-sans, sans-serif;
+        font-weight: 400;
+        font-size: 1.3em;
+        font-style: normal;
+        color: #696a6d;
+    }
+    
+    .formButton:hover {
+        background-color: #f3b378;
+        color: #696a6d;
+    }
+    
+    .formButton:active {
+        position:relative;
+        top:0.1875em;
+    }
+    
+    input:focus {
+      outline: none;
+      background-color: none
+    }
+    
+    ::-webkit-input-placeholder {
+       color: #696a6d;
+    }
+    
+    div.selection {
+        margin-right: 1em;
+        display: block;
+    }
+    
+    .checkbox {
+        margin-top: 1em;
+        display: inline;
+    }
+    
+    .newsletter img {
+        object-fit: cover;
+        max-width: 60em;
+    }
+
+    h2.newsletter{
+        font-family: dapifer,serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #f19f71;
+        margin-bottom: 1em;
+    }
+
+    div.selection{
+        font-family: davis-sans, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color:  #696a6d;
+    }
+
+
+/*MEDIA QUERY*/
+@media screen  and (min-width: 60em) { 
     div.container{
         display: grid;
         grid-template-columns: 3fr 1fr;
     }
 
     div.container-story {
-        max-width: 50em;
-        margin: auto;
+        max-width: 60em;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: 3fr 1.5fr;
+        grid-template-columns: 3fr 1.3fr;
     }
 
     h1{
-        width: 6em;
+        width: 5em; 
         margin: 0em;
     }
 
-    p{
-        margin-bottom: 1em;
-    }
     ul li{
         display: inline;
     } 
-    nav{
-        margin-bottom: 2em;
-        font-size: 16pt;
-    }
-    
+
     nav ul li a{
         font-family: dapifer,serif;
         font-weight: 550;
@@ -155,7 +316,6 @@ footer{
         text-transform: lowercase;
         text-decoration:  none;
     }
-
 
     nav ul li a:hover{
     color: #696a6d;
@@ -172,23 +332,47 @@ footer{
     main{
         grid-column: 1/2;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 1em 2em;
-       
-
-    }
-    section.mainstory {
-        grid-column:1/3;
-        grid-row:1/3;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 1em;
+    
     }
 
-    section{
-        margin-right: 3em;
+    div.mainstory {
+        grid-column: 1/3;
+        padding: 0;
+  
+    }
+
+    div.mainstory a {
+        display: inline-block;
+        margin: 0;
     }
 
     aside{
         grid-column: 2/3;
-        margin-left: 3em;
+        padding-left: 2em;
+        padding-right: 0em;
     }
+
+    /* FULL PHOTO GALLERY*/
+    label{
+        flex: 1 0 8em;
+    }
+
+    input{
+        display: none;
+    } */
+
+/*NEWSLETTER FULL*/
+
+.newsletter img {
+    height: 15em;
+    object-fit: cover;
+    max-width: 60em;
+}
+
+main.newsletter {
+    display: block;
+}   
 }
 

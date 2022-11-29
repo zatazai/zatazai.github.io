@@ -81,6 +81,7 @@ h2{
     font-family: dapifer,serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 1.2em;
     color: #f19f71;
     margin-bottom: 0.5em;
 }
@@ -121,27 +122,23 @@ p.section{
 }
 
 aside{
-    grid-column: 2/3;
-    margin-right: 2em;
-    
-
+    grid-column: 2/3;    
 }
 
 footer{
     margin-top: 3em;
-    margin-left: 1em;
     grid-column: 1/3;
+    font-size: 1em;
 }
 
 /*MOBILE PHOTO GALLERY*/
 
 div.gallery {
     max-width: 70em;
-    margin-top: 3em;
     grid-column: 1/3;
 }
 
-/*creates the actual gallery*/
+/*Creates the Gallery*/
 figure.gallery{
     width: calc(100% + 1em);
     position: absolute;
@@ -226,7 +223,7 @@ input{
     input::placeholder {
         font-family: davis-sans, sans-serif;
         font-weight: 400;
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-style: normal;
         color: #696a6d;
     }
